@@ -7,14 +7,15 @@
 #### BubbleSort 
 * Best Case Scenario
   * Array ordered from least to greatest 
-  * This scenario creates the least number of swaps (0) 
-  * Requires 20 comparisons, which is the same across all types of cases for arrays of length 5 
+  * In our array of 5 elements, this creates the least number of swaps (0) but requires 20 comparisons
 * Worst Case Scenario
   * Array ordered from greatest to least
-  * This scenario creates the most number of swaps (10)
-* We tested an array with unordered numbers. The number of swaps required was between the swaps neccessary for the best and worse cases which goes to show that there is a distinct best and worse case for BubbeSort
+  * In our array of 5 elements, this creates the most number of swaps (10) but requires 20 comparisons
+* We tested an array with unordered numbers. The number of swaps required was between the swaps neccessary for the best and worst cases which goes to show that there is a distinct best and worst case for BubbleSort
 #### InsertionSort
 * Best Case Scenario
+  * Array ordered from least to greatest
+  * This scenario creates the least amount of swaps (0) and comparisons (4)
 * Worst Case Scenario 
 #### SelectionSort
 *
