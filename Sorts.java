@@ -3,10 +3,14 @@ public class Sorts {
 
   public static void bubbleSortV(ArrayList<Comparable> data) {
     int counter = 0;
+    int numCompare = 0;
     int len = data.size();
     		int passNum = 0;
     		while (passNum < len) {
     			for (int i = len-1;i>0;i--) {
+
+            numCompare += 1;
+
     				if (data.get(i).compareTo(data.get(i-1)) < 0){ //need to swap
     					data.set( i, data.set(i-1,data.get(i)) );
 
@@ -17,6 +21,8 @@ public class Sorts {
     			passNum += 1;
     		}
         System.out.println("Number of swaps: " + counter);
+        System.out.println("Number of comparisons: " + numCompare);
+
   } // bubble
 
   public static ArrayList<Comparable> bubble( ArrayList<Comparable> input ) {
@@ -36,6 +42,7 @@ public class Sorts {
 
   public static void insertionSortV(ArrayList<Comparable> data) {
     int counter = 0;
+    int numCompare = 0;
     for(int partition = 1; partition < data.size(); partition++) {
       //partition marks first item in unsorted region
 
@@ -45,7 +52,7 @@ public class Sorts {
 
       //traverse sorted region from right to left
       for(int i=partition; i > 0; i--) {
-
+        numCompare += 1;
         // "walk" the current item to where it belongs
         // by swapping adjacent items
         if (data.get(i).compareTo(data.get(i-1)) < 0) {
@@ -59,6 +66,7 @@ public class Sorts {
       }
     }
       System.out.println("Number of swaps: " + counter);
+      System.out.println("Number of comparisons: " + numCompare);
   } // insertion
 
   public static ArrayList<Comparable> insertion( ArrayList<Comparable> input ) {
@@ -79,6 +87,7 @@ public class Sorts {
   public static void selectionSortV(ArrayList<Comparable> data) {
     int maxPos;
     int counter = 0;
+    int numCompare = 0;
 
         for( int pass = data.size()-1; pass > 0; pass-- ) {
           // System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
@@ -86,14 +95,17 @@ public class Sorts {
           for( int i = 1; i <= pass; i++ ) {
             // System.out.println( "maxPos: " + maxPos );//diag
             // System.out.println( data );//diag
+            numCompare += 1;
             if ( data.get(i).compareTo( data.get(maxPos) ) > 0 )
               maxPos = i;
-              counter += 1;
+
           }
           data.set( maxPos, ( data.set( pass, data.get(maxPos) ) ) );
+          counter += 1;
           // System.out.println( "after swap: " +  data );//diag
         }
         System.out.println("Number of swaps: " + counter);
+        System.out.println("Number of comparisons: " + numCompare);
   } // selection
 
   public static ArrayList<Comparable> selection( ArrayList<Comparable> input ) {

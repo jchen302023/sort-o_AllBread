@@ -73,7 +73,7 @@ public class Driver {
 
 
     // selection sort =========================
-    // == Best Case == //
+    // == Best/Worst Case == //
     // 10 swaps neccessary
     System.out.println("\n==SelectionSort==");
 
@@ -81,14 +81,14 @@ public class Driver {
     Sorts.selection(increasing);
     System.out.println( "ArrayList increasing after sorting:\n" + increasing );
     System.out.println("======================");
-    // == Worst Case Scenario == //
+    // == Best/Worst Case Scenario == //
     // 10 swaps neccessary
 
     System.out.println( "ArrayList decreasing before sorting:\n" + decreasing );
     Sorts.selection(decreasing);
     System.out.println( "ArrayList decreasing after sorting:\n" + decreasing );
     System.out.println("======================");
-    // == Unordered Case Scenario == //
+    // == Best/Worst Case Scenario == //
     // 10 swaps
 
     System.out.println( "ArrayList unordered before sorting:\n" + unordered );
