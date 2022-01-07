@@ -2,7 +2,7 @@
 
 ### TNPG: AllBread (Samantha Hua, Ivina Wang, Jack Chen)
 ### APCS pd07
-### Time Spent: 1.0 hrs 
+### Time Spent: 1.2 hrs 
 ### Song of the week: [No need to be upset 10 hrs](https://www.youtube.com/watch?v=eY52Zsg-KVI)
 
 #### BubbleSort 
