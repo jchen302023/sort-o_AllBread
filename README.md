@@ -5,7 +5,7 @@
 ### Time Spent: 1.2 hrs 
 ### Song of the week: [No need to be upset 10 hrs](https://www.youtube.com/watch?v=eY52Zsg-KVI)
 
-#### Bubblesort 
+### Bubblesort 
 * Best Case Scenario
   * Array ordered from least to greatest
   * With a sorted array, no swaps are necessary however comparisions are still executed. This is the best case because it limits the amount of memory used to perform the sort.
@@ -32,7 +32,7 @@
 | 1000        | 499500      |999000       |
 | 10000       | 49995000    |99990000     |
 
-#### Insertion Sort
+### Insertion Sort
 * Best Case Scenario
   * Array ordered from least to greatest
   * This is the best case because no swaps are necessary to order the array. The least number of comparisons are performed as well because the sorted region is the entire array so there are less comparisions needed to see if the newly, inserted number from the unsorted region is in the correct place.
@@ -60,7 +60,7 @@
 | 1000        | 499500      |499500       |
 | 10000       | 49995000    |49995000     |
 
-#### Selection Sort
+### Selection Sort
 * No Best or Worst Case 
   * No matter the order of the array, the same number of swaps and comparisons were made
   * This occurs because regardless of the values in the array, the sorting algorithm iterates through the entire array
