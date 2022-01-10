@@ -20,7 +20,7 @@ public class Driver {
     unordered.add(5);
     unordered.add(12);
     unordered.add(3);
-
+    /*
     ArrayList oneTen = new ArrayList<Integer>();
     for (int i = 10; i > 0; i --) {
       oneTen.add(i);
@@ -37,6 +37,25 @@ public class Driver {
     for (int i = 10000; i > 0; i --) {
       oneTenThouso.add(i);
     }
+    */ 
+    // best cases
+    ArrayList oneTenBest = new ArrayList<Integer>();
+    for (int i = 0; 10 > i; i ++) {
+      oneTenBest.add(i);
+    } // oneHundo
+    ArrayList oneHundoBest = new ArrayList<Integer>();
+    for (int i = 0; 100 > i; i ++) {
+      oneHundoBest.add(i);
+    } // oneHundo
+    ArrayList oneThousoBest = new ArrayList<Integer>();
+    for (int i = 0; 1000 > i; i ++) {
+      oneThousoBest.add(i);
+    }
+    ArrayList oneTenThousoBest = new ArrayList<Integer>();
+    for (int i = 0; 10000 > i; i ++) {
+      oneTenThousoBest.add(i);
+    }
+
 
     // bubble sort ==========================
     // == Best Case == //
@@ -63,10 +82,11 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
-    Sorts.bubble(oneTen);
-    Sorts.bubble(oneHundo);
-    Sorts.bubble(oneThouso);
-    Sorts.bubble(oneTenThouso);
+    Sorts.bubble(oneTenBest);
+    Sorts.bubble(oneHundoBest);
+    Sorts.bubble(oneThousoBest);
+    Sorts.bubble(oneTenThousoBest);
+
 
     // insertion sort =========================
     // == Best Case == //
@@ -91,10 +111,10 @@ public class Driver {
     Sorts.insertion(unordered);
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
-    Sorts.insertion(oneTen);
-    Sorts.insertion(oneHundo);
-    Sorts.insertion(oneThouso);
-    Sorts.insertion(oneTenThouso);
+    Sorts.insertion(oneTenBest);
+    Sorts.insertion(oneHundoBest);
+    Sorts.insertion(oneThousoBest);
+    Sorts.insertion(oneTenThousoBest);
 
     // selection sort =========================
     // == Best/Worst Case == //
@@ -120,10 +140,10 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
-    Sorts.selection(oneTen);
-    Sorts.selection(oneHundo);
-    Sorts.selection(oneThouso);
-    Sorts.selection(oneTenThouso);
+    Sorts.selection(oneTenBest);
+    Sorts.selection(oneHundoBest);
+    Sorts.selection(oneThousoBest);
+    Sorts.selection(oneTenThousoBest);
 
   } // main
 } // Driver class
