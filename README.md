@@ -17,20 +17,24 @@
 * We also tested an array of 5 elements with unordered numbers. The number of swaps required was between the swaps neccessary for the best and worst cases which goes to show that there is a distinct best and worst case for BubbleSort
 
 **Best Case**
-| Array Length| Swaps       | Comparisions|
-| ----------- | ----------- | ----------- |
-| 10          | 0           |90           |
-| 100         | 0           |9900         |
-| 1000        | 0           |999000       |
-| 10000       | 0           |99990000     |
+| Array Length| Swaps       | Comparisions| Passes      |
+| ----------- | ----------- | ----------- | ----------- |
+| 5           | 0           |20           |5            |
+| 10          | 0           |90           |10           |
+| 50          | 0           |2450         |50           |
+| 100         | 0           |9900         |100          |
+| 1000        | 0           |999000       |1000         |
+| 10000       | 0           |99990000     |10000        |
 
 **Worst Case**
-| Array Length| Swaps       | Comparisions|
-| ----------- | ----------- | ----------- |
-| 10          | 45          |90           |
-| 100         | 4950        |9900         |
-| 1000        | 499500      |999000       |
-| 10000       | 49995000    |99990000     |
+| Array Length| Swaps       | Comparisions| Passes      |
+| ----------- | ----------- | ----------- | ----------- |
+| 5           | 10          |20           |5            |
+| 10          | 45          |90           |10           |
+| 50          | 1225        |2450         |50           |
+| 100         | 4950        |9900         |100          |
+| 1000        | 499500      |999000       |1000         |
+| 10000       | 49995000    |99990000     |10000        |
 
 ### Insertion Sort
 * Best Case Scenario
