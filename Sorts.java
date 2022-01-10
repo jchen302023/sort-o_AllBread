@@ -22,7 +22,7 @@ public class Sorts {
     		}
         System.out.println("Number of swaps: " + counter);
         System.out.println("Number of comparisons: " + numCompare);
-        System.out.println("Number of passes: " + passNum);
+        System.out.println("Number of passes: " + passNum + "\n");
 
   } // bubble
 
@@ -70,7 +70,7 @@ public class Sorts {
     }
       System.out.println("Number of swaps: " + counter);
       System.out.println("Number of comparisons: " + numCompare);
-      System.out.println("Number of passes: " + passNum);
+      System.out.println("Number of passes: " + passNum + "\n");
   } // insertion
 
   public static ArrayList<Comparable> insertion( ArrayList<Comparable> input ) {
@@ -112,7 +112,7 @@ public class Sorts {
         }
         System.out.println("Number of swaps: " + counter);
         System.out.println("Number of comparisons: " + numCompare);
-        System.out.println("Number of passes: " + passNum);
+        System.out.println("Number of passes: " + passNum + "\n");
   } // selection
 
   public static ArrayList<Comparable> selection( ArrayList<Comparable> input ) {

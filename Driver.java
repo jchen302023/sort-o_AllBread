@@ -91,7 +91,7 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
-    Sorts.bubble(oneTen +\n);
+    Sorts.bubble(oneTen);
     Sorts.bubble(oneFifty);
     Sorts.bubble(oneHundo);
     Sorts.bubble(oneThouso);
