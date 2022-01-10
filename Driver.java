@@ -91,17 +91,21 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
-    Sorts.bubble(oneTen);
-    Sorts.bubble(oneFifty);
-    Sorts.bubble(oneHundo);
-    Sorts.bubble(oneThouso);
-    Sorts.bubble(oneTenThouso);
-    System.out.println("======================");
+    //best
+    System.out.println("larger arrays best cases:\n");
     Sorts.bubble(oneTenBest);
     Sorts.bubble(oneFiftyBest);
     Sorts.bubble(oneHundoBest);
     Sorts.bubble(oneThousoBest);
     Sorts.bubble(oneTenThousoBest);
+    System.out.println("======================");
+    //worst
+    System.out.println("larger arrays worst cases:\n");
+    Sorts.bubble(oneTen);
+    Sorts.bubble(oneFifty);
+    Sorts.bubble(oneHundo);
+    Sorts.bubble(oneThouso);
+    Sorts.bubble(oneTenThouso);
 
 
     // insertion sort =========================
@@ -128,17 +132,21 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
-    Sorts.insertion(oneTen);
-    Sorts.insertion(oneFifty);
-    Sorts.insertion(oneHundo);
-    Sorts.insertion(oneThouso);
-    Sorts.insertion(oneTenThouso);
-    System.out.println("======================");
+    //best
+    System.out.println("larger arrays best cases:\n");
     Sorts.insertion(oneTenBest);
     Sorts.insertion(oneFiftyBest);
     Sorts.insertion(oneHundoBest);
     Sorts.insertion(oneThousoBest);
     Sorts.insertion(oneTenThousoBest);
+    System.out.println("======================");
+    //worst
+    System.out.println("larger arrays worst cases:\n");
+    Sorts.insertion(oneTen);
+    Sorts.insertion(oneFifty);
+    Sorts.insertion(oneHundo);
+    Sorts.insertion(oneThouso);
+    Sorts.insertion(oneTenThouso);
 
     // selection sort =========================
     // == Best/Worst Case == //
@@ -164,17 +172,21 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
-    Sorts.selection(oneTen);
-    Sorts.selection(oneFifty);
-    Sorts.selection(oneHundo);
-    Sorts.selection(oneThouso);
-    Sorts.selection(oneTenThouso);
-    System.out.println("======================");
+    //best
+    System.out.println("larger arrays best cases:\n");
     Sorts.selection(oneTenBest);
     Sorts.selection(oneFiftyBest);
     Sorts.selection(oneHundoBest);
     Sorts.selection(oneThousoBest);
     Sorts.selection(oneTenThousoBest);
+    System.out.println("======================");
+    //worst
+    System.out.println("larger arrays worst cases:\n");
+    Sorts.selection(oneTen);
+    Sorts.selection(oneFifty);
+    Sorts.selection(oneHundo);
+    Sorts.selection(oneThouso);
+    Sorts.selection(oneTenThouso);
 
   } // main
 } // Driver class
