@@ -21,6 +21,23 @@ public class Driver {
     unordered.add(12);
     unordered.add(3);
 
+    ArrayList oneTen = new ArrayList<Integer>();
+    for (int i = 10; i > 0; i --) {
+      oneTen.add(i);
+    } // oneHundo
+    ArrayList oneHundo = new ArrayList<Integer>();
+    for (int i = 100; i > 0; i --) {
+      oneHundo.add(i);
+    } // oneHundo
+    ArrayList oneThouso = new ArrayList<Integer>();
+    for (int i = 1000; i > 0; i --) {
+      oneThouso.add(i);
+    }
+    ArrayList oneTenThouso = new ArrayList<Integer>();
+    for (int i = 10000; i > 0; i --) {
+      oneTenThouso.add(i);
+    }
+
     // bubble sort ==========================
     // == Best Case == //
     // 0 swaps neccessary
@@ -46,6 +63,10 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
+    Sorts.bubble(oneTen);
+    Sorts.bubble(oneHundo);
+    Sorts.bubble(oneThouso);
+    Sorts.bubble(oneTenThouso);
 
     // insertion sort =========================
     // == Best Case == //
@@ -70,7 +91,10 @@ public class Driver {
     Sorts.insertion(unordered);
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
-
+    Sorts.insertion(oneTen);
+    Sorts.insertion(oneHundo);
+    Sorts.insertion(oneThouso);
+    Sorts.insertion(oneTenThouso);
 
     // selection sort =========================
     // == Best/Worst Case == //
@@ -96,6 +120,10 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
+    Sorts.selection(oneTen);
+    Sorts.selection(oneHundo);
+    Sorts.selection(oneThouso);
+    Sorts.selection(oneTenThouso);
 
   } // main
 } // Driver class
