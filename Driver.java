@@ -20,11 +20,16 @@ public class Driver {
     unordered.add(5);
     unordered.add(12);
     unordered.add(3);
-    /*
+
+    //worst cases
     ArrayList oneTen = new ArrayList<Integer>();
     for (int i = 10; i > 0; i --) {
       oneTen.add(i);
-    } // oneHundo
+    }
+    ArrayList oneFifty = new ArrayList<Integer>();
+    for (int i = 50; i > 0; i --) {
+      oneFifty.add(i);
+    }
     ArrayList oneHundo = new ArrayList<Integer>();
     for (int i = 100; i > 0; i --) {
       oneHundo.add(i);
@@ -37,12 +42,16 @@ public class Driver {
     for (int i = 10000; i > 0; i --) {
       oneTenThouso.add(i);
     }
-    */ 
+
     // best cases
     ArrayList oneTenBest = new ArrayList<Integer>();
     for (int i = 0; 10 > i; i ++) {
       oneTenBest.add(i);
-    } // oneHundo
+    }
+    ArrayList oneFiftyBest = new ArrayList<Integer>();
+    for (int i = 0; 50 > i; i ++) {
+      oneFiftyBest.add(i);
+    }
     ArrayList oneHundoBest = new ArrayList<Integer>();
     for (int i = 0; 100 > i; i ++) {
       oneHundoBest.add(i);
@@ -82,7 +91,14 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
+    Sorts.bubble(oneTen +\n);
+    Sorts.bubble(oneFifty);
+    Sorts.bubble(oneHundo);
+    Sorts.bubble(oneThouso);
+    Sorts.bubble(oneTenThouso);
+    System.out.println("======================");
     Sorts.bubble(oneTenBest);
+    Sorts.bubble(oneFiftyBest);
     Sorts.bubble(oneHundoBest);
     Sorts.bubble(oneThousoBest);
     Sorts.bubble(oneTenThousoBest);
@@ -111,7 +127,15 @@ public class Driver {
     Sorts.insertion(unordered);
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
+
+    Sorts.insertion(oneTen);
+    Sorts.insertion(oneFifty);
+    Sorts.insertion(oneHundo);
+    Sorts.insertion(oneThouso);
+    Sorts.insertion(oneTenThouso);
+    System.out.println("======================");
     Sorts.insertion(oneTenBest);
+    Sorts.insertion(oneFiftyBest);
     Sorts.insertion(oneHundoBest);
     Sorts.insertion(oneThousoBest);
     Sorts.insertion(oneTenThousoBest);
@@ -140,7 +164,14 @@ public class Driver {
     System.out.println( "ArrayList unordered after sorting:\n" + unordered );
     System.out.println("======================");
 
+    Sorts.selection(oneTen);
+    Sorts.selection(oneFifty);
+    Sorts.selection(oneHundo);
+    Sorts.selection(oneThouso);
+    Sorts.selection(oneTenThouso);
+    System.out.println("======================");
     Sorts.selection(oneTenBest);
+    Sorts.selection(oneFiftyBest);
     Sorts.selection(oneHundoBest);
     Sorts.selection(oneThousoBest);
     Sorts.selection(oneTenThousoBest);

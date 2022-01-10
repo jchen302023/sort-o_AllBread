@@ -22,6 +22,7 @@ public class Sorts {
     		}
         System.out.println("Number of swaps: " + counter);
         System.out.println("Number of comparisons: " + numCompare);
+        System.out.println("Number of passes: " + passNum);
 
   } // bubble
 
@@ -43,6 +44,7 @@ public class Sorts {
   public static void insertionSortV(ArrayList<Comparable> data) {
     int counter = 0;
     int numCompare = 0;
+    int passNum = 0;
     for(int partition = 1; partition < data.size(); partition++) {
       //partition marks first item in unsorted region
 
@@ -51,6 +53,7 @@ public class Sorts {
 
 
       //traverse sorted region from right to left
+      passNum += 1;
       for(int i=partition; i > 0; i--) {
         numCompare += 1;
         // "walk" the current item to where it belongs
@@ -67,6 +70,7 @@ public class Sorts {
     }
       System.out.println("Number of swaps: " + counter);
       System.out.println("Number of comparisons: " + numCompare);
+      System.out.println("Number of passes: " + passNum);
   } // insertion
 
   public static ArrayList<Comparable> insertion( ArrayList<Comparable> input ) {
@@ -88,10 +92,12 @@ public class Sorts {
     int maxPos;
     int counter = 0;
     int numCompare = 0;
+    int passNum = 0;
 
         for( int pass = data.size()-1; pass > 0; pass-- ) {
           // System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
           maxPos = 0;
+          passNum += 1;
           for( int i = 1; i <= pass; i++ ) {
             // System.out.println( "maxPos: " + maxPos );//diag
             // System.out.println( data );//diag
@@ -106,6 +112,7 @@ public class Sorts {
         }
         System.out.println("Number of swaps: " + counter);
         System.out.println("Number of comparisons: " + numCompare);
+        System.out.println("Number of passes: " + passNum);
   } // selection
 
   public static ArrayList<Comparable> selection( ArrayList<Comparable> input ) {
