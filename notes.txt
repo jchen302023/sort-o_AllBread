@@ -1,0 +1,46 @@
+TNPG: AllBread (Samantha Hua, Ivina Wang, Jack Chen)
+APCS pd07
+L04: Never Fear, Big O is Here!
+Time Spent: 3 hrs
+
+DISCO:
+ * Big Oh represents Order which describes the relationship between inputs and outputs of a function
+ * Big Oh can be used to compare execution time of algorithms instead of using currentTimeMillis()
+ * We determined that SelectionSort is the best sorting algorithm overall because it does not depend on the values
+ within an array, it has the same number of swaps and comparisons
+
+QCC:
+ * Which is more effective: Big Oh or currentTimeMillis()?
+ * What other sorting methods exist and are they more efficient than these?
+ * Could we implement binary search within SelectionSort so that when the sorting algorithm searches for the
+ minimum value, it would use binary search. This would decrease the number of comparisons.
+
+ BUB-QA:
+ * q0: If a pass requires no swaps, what do you know?
+ * a0: The array is sorted
+ * q1: After pass p, what do you know?
+ * a1: the left most p values are sorted
+ * q2: How many passes are necessary to completely sort?
+ * a2: number of items in the array - 1
+
+SEL-QA:
+ * q0: How many passes to sort n elements?
+ * a0: n - 1 passes
+ * q1: What do you know after pass p?
+ * a1: The first p elements are in their sorted positions
+ * q2: How do you know if sorted?
+ * a2: After you reach the last item in the array and complete all necessary swaps
+ * q3: What does a pass boil down to?
+ * a3: To perform a swap.
+
+INS-QA:
+ * q0: How many passes to sort n elements?
+ * a0: n-1
+ * q1: What do you know after pass p?
+ * a1: the leftmost p+1 values are sorted
+ * q2: How will you know when sorted?
+ * a2: when you sort the last value in the array -->  when you reach n-1 passes
+ * q3: What constitutes a pass?
+ * a3: adding a value to the sorted region and sorting it
+ * q4: What must you track?
+ * a4: the size of the sorted/unsorted region
